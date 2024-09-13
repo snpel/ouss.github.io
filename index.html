@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+    <title>Portfolio | Ludiflex</title>
+</head>
+
+<body>
+    <div class="containerr">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+               <a href="index.html" class="nav-link"> <p class="nav-name">Portfolio</p></a>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="project.html" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button  onclick="downloadCV()" class=" btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="about">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Kouriche Oussama</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Experienced backend developer With experience in developing desktop applications for
+                            management.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <!--                         <button class="btn blue-btn">Hire Me</button>
+ --> <button onclick="downloadCV()" class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                    </div>
+                    <!--   <div class="social_icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-dribbble"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div> -->
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/images/user.jpg" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="projects">
+                <div class="top-header pt-5">
+                </div>
+                <div class="project-row">
+                    <div class="project-container-left">
+                        <div class="project-container">
+                            <a href="project one.html" class="project-link">
+                                <img src="assets/images/pro10.PNG" alt="Project 1">
+                                <div class="icon-container">
+                                    <i class="devicon-java-plain-wordmark colored"></i>
+                                    <i class="devicon-sqlite-plain-wordmark colored"></i>
+                                </div>
+                                <div class="project-title">inventory management system ( licence Project)</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-container-right">
+                        <div class="project-container">
+
+                            <a href="project tow.html" class="project-link">
+                                <img src="assets/images/master2/V35.pdf-image-069.png" alt="Project 2">
+                                <div class="icon-container">
+                                    <i class="devicon-laravel-original colored"></i>
+                                    <i class="devicon-mysql-plain-wordmark"></i>
+                                </div>
+                                <div class="project-title">A Platform for Healthcare with Different Services (Master2
+                                    project)</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-container-left">
+                        <div class="project-container">
+
+                            <a href="project three.html" class="project-link">
+                                <img src="assets/images/easy_sell/sell1.PNG" alt="Project 1">
+                                <div class="icon-container">
+                                    <i class="devicon-java-plain-wordmark colored"></i>
+                                    <i class="devicon-sqlite-plain-wordmark colored"></i>
+
+                                </div>
+                                <div class="project-title">easy sell </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-container-right">
+                        <div class="project-container">
+
+                            <a href="project four.html" class="project-link">
+                                <img src="assets/images/school_management/scool2.jpg" alt="Project 2">
+                                <div class="icon-container">
+                                    <i class="devicon-java-plain-wordmark colored"></i>
+                                    <i class="devicon-sqlite-plain-wordmark colored"></i>
+
+                                </div>
+                                <div class="project-title">School management system</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-container-right">
+                        <div class="project-container">
+
+                            <a href="project five.html" class="project-link">
+                                <img src="assets/images/cv/cv1.PNG" alt="Project 2">
+                                <div class="icon-container">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+
+                                </div>
+                                <div class="project-title">My Portfolio</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>PROJECT</h1>
+                </div>
+                <div class="project-row">
+                    <div class="project-container-left">
+                        <div class="project-container">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#projectModal" class="project-link">
+                                <img src="assets/images/pro10.PNG" alt="Project 1">
+                                <div class="icon-container">
+                                    <i class="devicon-java-plain-wordmark colored"></i>
+                                    <i class="devicon-sqlite-plain-wordmark colored"></i>
+                                </div>
+                                <div class="project-title">inventory management system ( licence Project)</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-container-right">
+                        <div class="project-container">
+
+                            <a href="" data-bs-toggle="modal" data-bs-target="#secondProjectModal" class="project-link">
+                                <img src="assets/images/master2/V35.pdf-image-069.png" alt="Project 2">
+                                <div class="icon-container">
+                                    <i class="devicon-laravel-original colored"></i>
+                                    <i class="devicon-mysql-plain-wordmark"></i>
+                                </div>
+                                <div class="project-title">A Platform for Healthcare with Different Services (Master2
+                                    project)</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-container-left">
+                        <div class="project-container">
+
+                            <a href="" data-bs-toggle="modal" data-bs-target="#thirdProjectModal" class="project-link">
+                                <img src="assets/images/easy_sell/sell1.PNG" alt="Project 1">
+                                <div class="icon-container">
+                                    <i class="devicon-java-plain-wordmark colored"></i>
+                                    <i class="devicon-sqlite-plain-wordmark colored"></i>
+
+                                </div>
+                                <div class="project-title">easy sell </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-container-right">
+                        <div class="project-container">
+
+                            <a href="" data-bs-toggle="modal" data-bs-target="#fourthProjectModal" class="project-link">
+                                <img src="assets/images/school_management/scool2.jpg" alt="Project 2">
+                                <div class="icon-container">
+                                    <i class="devicon-java-plain-wordmark colored"></i>
+                                    <i class="devicon-sqlite-plain-wordmark colored"></i>
+
+                                </div>
+                                <div class="project-title">School management system</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+    </div>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+     
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#about">About Me</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kouriche Oussama
+                </a> - All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- Project Modal 1 -->
+    <div class="modal fade" id="fourthProjectModal" tabindex="-1" aria-labelledby="fourthProjectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xxl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fourthProjectModalLabel">School Management System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <!-- Project Information (Left Column) -->
+                        <div class="project-details">
+                            <h5>Project Information</h5>
+                            <p><strong>Name:</strong> School Management System</p>
+                            <p><strong>Date of Creation:</strong> August 2018</p>
+                            <p><strong>Languages:</strong> JAVA </p>
+                            <p><strong>Frameworks Used:</strong> SWING </p>
+                            <p><strong>Database</strong> SQLITE </p>
+                        </div>
+                    </div>
+
+                    <!-- Carousel and Description (Right Column) -->
+                    <div class="carousel-and-description">
+                        <div id="fourthProjectCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/school_management/scool1.jpg" alt="School Project Image 1"
+                                        onclick="openLightboxProject4(0)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool2.jpg" alt="School Project Image 2"
+                                        onclick="openLightboxProject4(1)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool3.jpg" alt="School Project Image 3"
+                                        onclick="openLightboxProject4(2)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool4.jpg" alt="School Project Image 4"
+                                        onclick="openLightboxProject4(3)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool5.jpg" alt="School Project Image 5"
+                                        onclick="openLightboxProject4(4)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool6.jpg" alt="School Project Image 6"
+                                        onclick="openLightboxProject4(5)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool7.jpg" alt="School Project Image 7"
+                                        onclick="openLightboxProject4(6)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool8.jpg" alt="School Project Image 8"
+                                        onclick="openLightboxProject4(7)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool10.jpg" alt="School Project Image 10"
+                                        onclick="openLightboxProject4(9)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool11.jpg" alt="School Project Image 11"
+                                        onclick="openLightboxProject4(10)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool12.jpg" alt="School Project Image 12"
+                                        onclick="openLightboxProject4(11)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/school_management/scool13.jpg" alt="School Project Image 13"
+                                        onclick="openLightboxProject4(12)">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#fourthProjectCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#fourthProjectCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <!-- General Description below the carousel -->
+                        <div class="general-description">
+                            <h5>Project Description</h5>
+                            <p>The first program I developed in my life using Java Swing was a program to manage the
+                                high school I was studying in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+    <title>Portfolio | Ludiflex</title>
+</head>
+
+<body>
+    <div class="containerr">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-link">
+                    <p class="nav-name">Portfolio</p>
+                </a>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="project.html" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button onclick="downloadCV()" class=" btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="projects">
+                <div class="top-header pt-5">
+                </div>
+                <div class="containerr">
+
+                    <div class="d-flex">
+                        <!-- Project Information (Left Column) -->
+                        <div class="project-details">
+                            <div class="pt-5">
+                                <h4>Project Information</h4>
+                            </div>
+                            <h5>Project Information</h5>
+                            <p><strong>Name:</strong> MY portfolio</p>
+                            <p><strong>Date of Creation:</strong> September 2024</p>
+                            <p><strong>Languages:</strong>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            </p>
+                            <p><strong>Frameworks Used:</strong>
+                            <div class="skills-list">
+                                <span>Bootstrap</span>
+                            </div>
+                            </p>
+                        </div>
+
+                        <!-- Carousel (Right Column) -->
+                        <div class="carousel-container">
+                            <img id="carouselImage" src="assets/images/pro1.png" alt="Project Image 1"
+                                onclick="openLightbox(0)">
+
+                            <!-- Carousel Navigation -->
+                            <div class="carousel-nav">
+                                <button onclick="prevSlide()">&#10094;</button>
+                                <button onclick="nextSlide()">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- General Description -->
+                    <div class="general-description">
+                        <h3>Project Description</h3>
+                        <p>This is my personal portfolio For showing my projects In all my career.</p>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Lightbox Modal -->
+            <div id="lightboxModal" class="lightbox-modal">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <span class="lightbox-prev" onclick="changeLightboxSlide(-1)">&#10094;</span>
+                <span class="lightbox-next" onclick="changeLightboxSlide(1)">&#10095;</span>
+                <img class="lightbox-content" id="lightboxImage">
+            </div>
+
+    </div>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="about.html">About Me</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="project.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kouriche Oussama
+                </a> - All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script>
+    const images = [
+  'assets/images/cv/cv1.png',
+  'assets/images/cv/cv2.png',
+  'assets/images/cv/cv3.png',
+  'assets/images/cv/cv4.png',
+  'assets/images/cv/cv5.png'
+];
+
+        let currentIndex1 = 0; // To track the current image index
+
+        // Function to show the current image
+        function showImage(index) {
+            const carouselImage = document.getElementById('carouselImage');
+            carouselImage.src = images[index]; // Set the image src to the current image
+        }
+
+        // Function to move to the previous slide
+        function prevSlide() {
+            currentIndex1 = (currentIndex1 === 0) ? images.length - 1 : currentIndex1 - 1; // Go to last image if it's the first one
+            showImage(currentIndex1); // Show the new image
+        }
+
+        // Function to move to the next slide
+        function nextSlide() {
+            currentIndex1 = (currentIndex1 === images.length - 1) ? 0 : currentIndex1 + 1; // Go back to first image if it's the last one
+            showImage(currentIndex1); // Show the new image
+        }
+
+        // Initial image display
+        showImage(currentIndex1);
+        let currentIndex = 0;
+
+        // Open lightbox and display the clicked image
+        function openLightbox(index) {
+            const lightboxModal = document.getElementById('lightboxModal');
+            const lightboxImage = document.getElementById('lightboxImage');
+
+            currentIndex = index;
+            lightboxModal.style.display = 'block';
+            lightboxImage.src = images[currentIndex];
+        }
+
+        // Close the lightbox
+        function closeLightbox() {
+            const lightboxModal = document.getElementById('lightboxModal');
+            lightboxModal.style.display = 'none';
+        }
+
+        // Change slide in the lightbox
+        function changeLightboxSlide(direction) {
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+
+            const lightboxImage = document.getElementById('lightboxImage');
+            lightboxImage.src = images[currentIndex];
+        }
+
+    </script>
+</body>
+
+</html>
